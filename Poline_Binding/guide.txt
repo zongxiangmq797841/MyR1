@@ -1,0 +1,3 @@
+1:采取System_Status中绘制曲线的步骤
+2:UI界面绑定类的属性，如何生效（可参考Alignment工具的使用,通过DynamicResource来实现）
+3:UI界面绑定类的属性，子窗体的UI可以使用父窗体Datacontext的内容（可参考System_Status的使用）

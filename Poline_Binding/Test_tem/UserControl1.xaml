@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="Test_tem.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Test_tem"
+             mc:Ignorable="d" 
+             d:DesignHeight="396" d:DesignWidth="596" Loaded="UserControl_Loaded" Background="White">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <local:VisibilityToBoolConverter x:Key="Vis2BoolConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" DataContext="{Binding VerticalAxis}">
+            <ItemsControl x:Name="itemsControl1" Margin="17,17.6,0,17.6" Padding="0" ItemsSource="{Binding VerticalStringList}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="24" Columns="1"></UniformGrid>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <TextBlock Margin="0,0,7,0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="Black" Background="Transparent" Text="{Binding}" FontSize="9"/>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <TextBox x:Name="textbox1" Margin="0,0,5,-8" Padding="0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Text="{Binding MinValueLabel,Mode=TwoWay}" Foreground="Black" BorderBrush="Transparent" Background="Transparent" FontSize="9" TextAlignment="Right" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" KeyDown="textbox_KeyDown"/>
+            <TextBox x:Name="textbox2" Margin="0,-8,5,0" Padding="0" HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding MaxValueLabel,Mode=TwoWay}" Foreground="Black" BorderBrush="Transparent" Background="Transparent" FontSize="9"  TextAlignment="Right" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" KeyDown="textbox_KeyDown"/>
+            <TextBlock Margin="0,-30,5,0" HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding Unit,Mode=OneWay}" Foreground="Black" Background="Transparent" FontSize="9"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1" DataContext="{Binding HorizontalAxis}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="17*" />
+                <RowDefinition Height="13*" />
+            </Grid.RowDefinitions>
+            <ItemsControl Margin="45,10,0,0"  ItemsSource="{Binding HorizontalLabelList}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Foreground="Black" Text="{Binding}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="1" Columns="16"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+            <TextBox x:Name="textbox3" Margin="-17,11,0,1" HorizontalAlignment="Left" Text="{Binding HistoryStartTimeLabel,Mode=TwoWay}" Foreground="Black" Background="Transparent" BorderBrush="Transparent" FontSize="9" KeyDown="textbox_KeyDownNormal" Grid.RowSpan="2" />
+            <TextBox x:Name="textbox4" Margin="0,10,-23,0" HorizontalAlignment="Right" Text="{Binding HistoryEndTimeLabel,Mode=TwoWay}" Foreground="Black" BorderBrush="Transparent" FontSize="9" Background="Transparent"  VerticalContentAlignment="Center" KeyDown="textbox_KeyDownNormal" Grid.RowSpan="2" />
+        </Grid>
+        <Canvas Grid.Column="1" Grid.Row="1" x:Name="Myline" Background="Transparent" MouseMove="Myline_MouseMove">
+            <ItemsControl DataContext="{Binding PolyLines}" ItemsSource="{Binding PointLineList}" Width="{Binding ActualWidth,ElementName=Myline}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Polyline Points="{Binding PolyLineCollection}" ClipToBounds="True" Stroke="Black" StrokeThickness="1" Visibility="Visible"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Canvas>
+        <Popup x:Name="popWindow"  IsOpen="True" StaysOpen="True" AllowsTransparency="True"
+                   PlacementTarget="{Binding ElementName=Myline}" Placement="Relative" 
+                   Width="{Binding ActualWidth,ElementName=Myline}" Height="{Binding ActualHeight,ElementName=Myline}" >
+            <Canvas>
+                <Rectangle x:Name="scaleLine" Height="600" Width="1" Stroke="Red" StrokeThickness="1" StrokeDashArray="2,2" StrokeDashOffset="1" SnapsToDevicePixels="True"/>
+            </Canvas>
+        </Popup>
+    </Grid>
+</UserControl>

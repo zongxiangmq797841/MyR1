@@ -1,0 +1,34 @@
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\bin\Debug\Test_tem.exe
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\bin\Debug\Test_tem.pdb
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\MainWindow.baml
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\MainWindow.g.cs
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\App.g.cs
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\Test_tem_MarkupCompile.cache
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\Test_tem.g.resources
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\Test_tem.Properties.Resources.resources
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\Test_tem.exe
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\Test_tem.pdb
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\UserControl1.baml
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\UserControl1.g.cs
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\wpf_mytest\Resources Dictionary\Test_tem\Test_tem\obj\x86\Debug\Test_tem_MarkupCompile.lref
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\Test_tem.exe
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\Test_tem.pdb
+F:\wpf_mytest\Poline_Binding\Test_tem\bin\Debug\Test_tem.exe
+F:\wpf_mytest\Poline_Binding\Test_tem\bin\Debug\Test_tem.pdb
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\MainWindow.g.cs
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\UserControl1.g.cs
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\App.g.cs
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\Test_tem_MarkupCompile.cache
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\Test_tem_MarkupCompile.lref
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\MainWindow.baml
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\UserControl1.baml
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\Test_tem.g.resources
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\Test_tem.Properties.Resources.resources
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\wpf_mytest\Poline_Binding\Test_tem\obj\x86\Debug\GenerateResource.write.1.tlog
